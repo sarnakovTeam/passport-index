@@ -1,0 +1,73 @@
+.header {
+	padding: 20px 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	@include media-breakpoint-up(xl) {
+		position: relative;
+		border-bottom: 1px solid #a0a1a3;
+	}
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__burger {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 20px;
+	}
+	&__nav {
+		&.--active {
+			transform: translateX(0%) !important;
+		}
+		@include media-breakpoint-down(xl) {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: white;
+			overflow-y: scroll;
+			transform: translateX(-100%);
+			transition: all 0.25s ease;
+		}
+
+		a {
+			padding: 24px 20px;
+			font-size: 24px;
+			line-height: 28px;
+			@include media-breakpoint-up(xl) {
+				padding: 14px 20px 32px;
+				line-height: 16px;
+				font-size: 14px;
+			}
+		}
+
+		& .nav {
+			&__links {
+				margin-top: 134px;
+				display: flex;
+				flex-direction: column;
+				@include media-breakpoint-up(xl) {
+					flex-direction: row;
+					margin-top: 0;
+				}
+				a:first-of-type {
+					@include media-breakpoint-up(xl) {
+						display: none;
+					}
+				}
+			}
+			&__close {
+				position: fixed;
+				right: 0;
+				top: 24px;
+				padding: 20px;
+			}
+		}
+	}
+}
