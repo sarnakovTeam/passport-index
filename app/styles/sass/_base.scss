@@ -29,3 +29,12 @@ body {
 		font-size: 18px;
 	}
 }
+.container {
+	margin: 0 auto;
+	max-width: 460px;
+	padding: 0 20;
+	@include media-breakpoint-up(xl) {
+		max-width: 1440px;
+		padding: 0 50px;
+	}
+}
