@@ -6,7 +6,10 @@
 	background-color: $accent;
 	color: #fff;
 }
-
+a {
+	color: var(--color-text);
+	text-decoration: none;
+}
 input,
 textarea {
 	outline: none;
@@ -20,7 +23,7 @@ textarea {
 body {
 	font-family: $userfont;
 	line-height: $lineheight;
-	color: var(--color-text1);
+	color: var(--color-text);
 	min-width: 320px;
 	position: relative;
 	overflow-x: hidden;
@@ -29,12 +32,34 @@ body {
 		font-size: 18px;
 	}
 }
+
+main {
+	padding-top: 80px;
+	@include media-breakpoint-up(xl) {
+		padding-top: 0px;
+	}
+}
 .container {
+	position: relative;
 	margin: 0 auto;
 	max-width: 460px;
-	padding: 0 20;
+	padding: 0 20px;
 	@include media-breakpoint-up(xl) {
 		max-width: 1440px;
 		padding: 0 50px;
+	}
+}
+
+.mobile-only {
+	display: inherit;
+	@include media-breakpoint-up(xl) {
+		display: none;
+	}
+}
+
+.desktop-only {
+	display: none;
+	@include media-breakpoint-up(xl) {
+		display: inherit;
 	}
 }
