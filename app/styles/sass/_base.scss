@@ -1,0 +1,31 @@
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+input,
+textarea {
+	outline: none;
+	&:focus:required:invalid {
+		border-color: red;
+	}
+	&:required:valid {
+		border-color: green;
+	}
+}
+body {
+	font-family: $userfont;
+	line-height: $lineheight;
+	color: var(--color-text1);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+	font-size: 16px;
+	@include media-breakpoint-up(xl) {
+		font-size: 18px;
+	}
+}
