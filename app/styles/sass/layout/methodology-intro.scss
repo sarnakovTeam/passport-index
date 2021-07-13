@@ -1,0 +1,22 @@
+.methodology-intro {
+  @include media-breakpoint-up(xl) {
+    padding: 80px 0;
+  }
+  .intro__text-block {
+    max-width: 707px;
+  }
+  .section-text {
+    max-width: 100%;
+  }
+  .page-title {
+    font-size: 44px;
+    line-height: normal;
+    @include media-breakpoint-up(sm) {
+      font-size: 54px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 72px;
+      line-height: 72px;
+    }
+  }
+}
