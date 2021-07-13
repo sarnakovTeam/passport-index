@@ -20,6 +20,10 @@ textarea {
     border-color: green;
   }
 }
+ul {
+  list-style: none;
+  padding: 0;
+}
 body {
   font-family: $userfont;
   line-height: 24px;
@@ -93,6 +97,7 @@ main {
 .btn {
   border-radius: 30px;
   min-width: 191px;
+  width: fit-content;
   padding: 12px 32px;
   display: flex;
   justify-content: center;
