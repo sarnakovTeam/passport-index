@@ -94,6 +94,21 @@ main {
     }
   }
 }
+.section-header {
+  @include media-breakpoint-up(xl) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.section-header-icon {
+  display: none;
+  @include media-breakpoint-up(xl) {
+    display: block;
+    height: 80px;
+    width: 80px;
+  }
+}
 .btn {
   border-radius: 30px;
   min-width: 191px;
