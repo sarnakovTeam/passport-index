@@ -1,0 +1,38 @@
+.share-desktop {
+  padding-bottom: 70px;
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    .btn {
+      display: none;
+    }
+    &--download {
+      .btn {
+        display: flex;
+      }
+    }
+  }
+  &__share {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+  }
+  &__title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--color-text);
+  }
+  &__list {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+  }
+}

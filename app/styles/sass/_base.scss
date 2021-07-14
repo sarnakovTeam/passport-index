@@ -56,7 +56,7 @@ main {
 .mobile-only {
   display: inherit;
   @include media-breakpoint-up(xl) {
-    display: none;
+    display: none !important;
   }
 }
 .desktop-only {
@@ -154,4 +154,18 @@ main {
       color: #626775;
     }
   }
+}
+.section-content--methodology {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  @include media-breakpoint-up(xl) {
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    gap: 20px;
+  }
+}
+.methodology-page__graph {
+  max-width: 100%;
+  width: 100%;
 }

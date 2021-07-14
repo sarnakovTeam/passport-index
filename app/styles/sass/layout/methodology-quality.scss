@@ -1,17 +1,6 @@
 .methodology-quality {
-  padding: 85px 0 5px;
-  .section-content {
-    @include media-breakpoint-up(xl) {
-      display: grid;
-      grid-template-columns: 4fr 1fr 4fr;
-      gap: 20px;
-    }
-  }
-  &__graph {
-    max-width: 100%;
-    margin-top: 35px;
-    @include media-breakpoint-up(xl) {
-      margin: 0;
-    }
+  padding: 60px 0 5px;
+  @include media-breakpoint-up(xl) {
+    padding: 100px 0 0;
   }
 }

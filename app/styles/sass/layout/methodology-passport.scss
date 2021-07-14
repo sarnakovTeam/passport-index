@@ -1,0 +1,26 @@
+.methodology-passport {
+  padding: 0 0 60px;
+  @include media-breakpoint-up(xl) {
+    padding: 100px 0;
+  }
+  &__list {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+  }
+  &__list-item {
+    border-bottom: 1px solid var(--color-line);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  &__graph-wrapper {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: 20px;
+    align-items: center;
+  }
+}
