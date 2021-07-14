@@ -109,6 +109,15 @@ main {
     width: 80px;
   }
 }
+.text-mono {
+  font-family: Roboto Mono;
+  font-size: 11px;
+  line-height: 13px;
+  color: var(--color-text);
+  &--grey {
+    color: var(--color-text2);
+  }
+}
 .btn {
   border-radius: 30px;
   min-width: 191px;
