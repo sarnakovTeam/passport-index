@@ -2,7 +2,9 @@
 	position: fixed;
 	left: 0;
 	right: 0;
+	top: 40px;
 	z-index: 10;
+	background: #fff;
 	@include media-breakpoint-up(xl) {
 		position: relative;
 		border-bottom: 1px solid #a0a1a3;
