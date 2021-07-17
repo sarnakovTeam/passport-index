@@ -1,171 +1,171 @@
 ::placeholder {
-  color: #666;
+	color: #666;
 }
 
 ::selection {
-  background-color: $accent;
-  color: #fff;
+	background-color: $accent;
+	color: #fff;
 }
 a {
-  color: var(--color-text);
-  text-decoration: none;
+	color: var(--color-text);
+	text-decoration: none;
 }
 input,
 textarea {
-  outline: none;
-  &:focus:required:invalid {
-    border-color: red;
-  }
-  &:required:valid {
-    border-color: green;
-  }
+	outline: none;
+	&:focus:required:invalid {
+		border-color: red;
+	}
+	&:required:valid {
+		border-color: green;
+	}
 }
 ul {
-  list-style: none;
-  padding: 0;
+	list-style: none;
+	padding: 0;
 }
 body {
-  font-family: $userfont;
-  line-height: 24px;
-  color: var(--color-text);
-  min-width: 320px;
-  position: relative;
-  overflow-x: hidden;
-  font-size: 16px;
-  @include media-breakpoint-up(xl) {
-    font-size: 18px;
-    line-height: 26px;
-  }
+	font-family: $userfont;
+	line-height: 24px;
+	color: var(--color-text);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+	font-size: 16px;
+	@include media-breakpoint-up(xl) {
+		font-size: 18px;
+		line-height: 26px;
+	}
 }
 main {
-  padding-top: 80px;
-  @include media-breakpoint-up(xl) {
-    padding-top: 0px;
-  }
+	padding-top: 100px;
+	@include media-breakpoint-up(xl) {
+		padding-top: 140px;
+	}
 }
 .container {
-  position: relative;
-  margin: 0 auto;
-  max-width: 460px;
-  padding: 0 20px;
-  @include media-breakpoint-up(xl) {
-    max-width: 1440px;
-    padding: 0 50px;
-  }
+	position: relative;
+	margin: 0 auto;
+	max-width: 460px;
+	padding: 0 20px;
+	@include media-breakpoint-up(xl) {
+		max-width: 1440px;
+		padding: 0 50px;
+	}
 }
 .mobile-only {
-  display: inherit;
-  @include media-breakpoint-up(xl) {
-    display: none !important;
-  }
+	display: inherit;
+	@include media-breakpoint-up(xl) {
+		display: none !important;
+	}
 }
 .desktop-only {
-  display: none;
-  @include media-breakpoint-up(xl) {
-    display: inherit;
-  }
+	display: none;
+	@include media-breakpoint-up(xl) {
+		display: inherit;
+	}
 }
 .page-title {
-  font-weight: 300;
-  font-size: 60px;
-  line-height: 60px;
-  margin-bottom: 35px;
-  @include media-breakpoint-up(xl) {
-    font-size: 72px;
-    line-height: 72px;
-  }
+	font-weight: 300;
+	font-size: 60px;
+	line-height: 60px;
+	margin-bottom: 35px;
+	@include media-breakpoint-up(xl) {
+		font-size: 72px;
+		line-height: 72px;
+	}
 }
 .section-title {
-  font-weight: bold;
-  margin-bottom: 26px;
-  font-size: 16px;
-  @include media-breakpoint-up(xl) {
-    margin-bottom: 0;
-    font-size: 18px;
-  }
+	font-weight: bold;
+	margin-bottom: 26px;
+	font-size: 16px;
+	@include media-breakpoint-up(xl) {
+		margin-bottom: 0;
+		font-size: 18px;
+	}
 }
 .section-wrapper {
-  @include media-breakpoint-up(xl) {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 20px;
-    .section-title {
-      max-width: 225px;
-    }
-  }
+	@include media-breakpoint-up(xl) {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		gap: 20px;
+		.section-title {
+			max-width: 225px;
+		}
+	}
 }
 .section-header {
-  @include media-breakpoint-up(xl) {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+	@include media-breakpoint-up(xl) {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
 }
 .section-header-icon {
-  display: none;
-  @include media-breakpoint-up(xl) {
-    display: block;
-    height: 80px;
-    width: 80px;
-  }
+	display: none;
+	@include media-breakpoint-up(xl) {
+		display: block;
+		height: 80px;
+		width: 80px;
+	}
 }
 .text-mono {
-  font-family: Roboto Mono;
-  font-size: 11px;
-  line-height: 13px;
-  color: var(--color-text);
-  &--grey {
-    color: var(--color-text2);
-  }
+	font-family: Roboto Mono;
+	font-size: 11px;
+	line-height: 13px;
+	color: var(--color-text);
+	&--grey {
+		color: var(--color-text2);
+	}
 }
 .btn {
-  border-radius: 30px;
-  min-width: 191px;
-  width: fit-content;
-  padding: 12px 32px;
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  border: 0;
-  background: transparent;
-  @include media-breakpoint-up(xl) {
-    min-width: 241px;
-    padding: 14px 50px;
-  }
-  &__primary {
-    background: var(--color-text);
-    color: var(--color-white);
-    &:hover {
-      background: #000000;
-    }
-    &--disabled {
-      background: #626775;
-    }
-  }
-  &__secondary {
-    border: 1px solid var(--color-text);
-    color: var(--color-text);
-    &:hover {
-      border: 1px solid #000000;
-      color: #000000;
-    }
-    &--disabled {
-      border: 1px solid #626775;
-      color: #626775;
-    }
-  }
+	border-radius: 30px;
+	min-width: 191px;
+	width: fit-content;
+	padding: 12px 32px;
+	display: flex;
+	justify-content: center;
+	font-weight: bold;
+	border: 0;
+	background: transparent;
+	@include media-breakpoint-up(xl) {
+		min-width: 241px;
+		padding: 14px 50px;
+	}
+	&__primary {
+		background: var(--color-text);
+		color: var(--color-white);
+		&:hover {
+			background: #000000;
+		}
+		&--disabled {
+			background: #626775;
+		}
+	}
+	&__secondary {
+		border: 1px solid var(--color-text);
+		color: var(--color-text);
+		&:hover {
+			border: 1px solid #000000;
+			color: #000000;
+		}
+		&--disabled {
+			border: 1px solid #626775;
+			color: #626775;
+		}
+	}
 }
 .section-content--methodology {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  @include media-breakpoint-up(xl) {
-    display: grid;
-    grid-template-columns: 4fr 1fr 4fr;
-    gap: 20px;
-  }
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	@include media-breakpoint-up(xl) {
+		display: grid;
+		grid-template-columns: 4fr 1fr 4fr;
+		gap: 20px;
+	}
 }
 .methodology-page__graph {
-  max-width: 100%;
-  width: 100%;
+	max-width: 100%;
+	width: 100%;
 }
