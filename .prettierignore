@@ -1,2 +1,2 @@
-app/parts/header.html
-app/parts/footer.html
+app/layout/head.html
+app/layout/footer.html
