@@ -8,6 +8,7 @@
 }
 
 a {
+	transition: all 0.2s ease;
 	color: var(--color-text);
 	text-decoration: none;
 }
@@ -24,6 +25,7 @@ textarea {
 ul {
 	list-style: none;
 	padding: 0;
+	margin-bottom: 0;
 }
 body {
 	font-family: $userfont;
@@ -33,11 +35,11 @@ body {
 	position: relative;
 	overflow-x: hidden;
 	font-size: 16px;
-	padding-top: 100px;
+	padding-top: 142px;
 	@include media-breakpoint-up(xl) {
 		font-size: 18px;
 		line-height: 26px;
-		padding-top: 140px;
+		padding-top: 142px;
 	}
 }
 .container {

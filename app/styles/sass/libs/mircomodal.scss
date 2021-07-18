@@ -32,11 +32,12 @@
 
 .modal__container {
 	background-color: #fff;
-	padding: 30px;
+	padding: 70px 30px 30px;
 	max-width: 500px;
 	max-height: 100vh;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 	overflow-y: auto;
 	box-sizing: border-box;
 }
@@ -50,27 +51,43 @@
 .modal__title {
 	margin-top: 0;
 	margin-bottom: 0;
-	font-weight: 600;
+	font-weight: 700;
+	font-size: 16px !important;
 	font-size: 1.25rem;
 	line-height: 1.25;
-	color: #00449e;
 	box-sizing: border-box;
 }
 
 .modal__close {
+	position: absolute;
 	background: transparent;
 	border: 0;
+	height: 40px;
+	width: 40px;
+	top: 20px;
+	right: 20px;
 }
 
-.modal__header .modal__close:before {
+.modal__close:before {
 	content: '\2715';
+	font-size: 18px;
 }
 
 .modal__content {
-	margin-top: 2rem;
+	margin-top: 1rem;
+	padding-top: 1rem;
 	margin-bottom: 2rem;
+	padding-bottom: 1rem;
 	line-height: 1.5;
-	color: rgba(0, 0, 0, 0.8);
+
+	&.--without-margins {
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+	&.--with-paddings {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
 
 /**************************\

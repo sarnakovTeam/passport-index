@@ -1,0 +1,15 @@
+.continent-list {
+	a {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		font-size: 18px;
+		line-height: 21px;
+		svg {
+			height: 26px;
+		}
+	}
+	.active a {
+		color: var(--color-darkblue);
+	}
+}
