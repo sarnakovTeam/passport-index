@@ -3,7 +3,7 @@
 	margin: auto;
 	width: 100%;
 	max-width: 460px;
-	border-radius: 3px;
+	// border-radius: 3px;
 	overflow: hidden;
 	.label {
 		position: absolute;
@@ -40,12 +40,12 @@
 		font-size: 16px;
 		font-weight: 400;
 		// background: rgba(0, 0, 0, 0.02);
-		box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+		box-shadow: inset 0 -1px 0 #0b132a;
 		color: #000;
 		transition: all 0.15s ease;
 		&:hover {
 			// background: rgba(0, 0, 0, 0.04);
-			box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+			box-shadow: inset 0 -1px 0 var(--color-darkblue);
 		}
 		&:not(:-moz-placeholder-shown) {
 			+ {
@@ -74,7 +74,7 @@
 		&:focus {
 			// background: rgba(0, 0, 0, 0.05);
 			outline: none;
-			box-shadow: inset 0 -2px 0 var(--color-darkblue);
+			box-shadow: inset 0 -1px 0 var(--color-darkblue);
 			+ {
 				.label {
 					color: var(--color-darkblue);
