@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		openClass: 'is-open',
 		// disableScroll: true,
 		// disableFocus: false,
-		// awaitOpenAnimation: false,
-		// awaitCloseAnimation: false,
+		awaitOpenAnimation: true,
+		awaitCloseAnimation: true,
 		// debugMode: true,
 	});
 });

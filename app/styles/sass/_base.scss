@@ -6,6 +6,7 @@
 	background-color: $accent;
 	color: #fff;
 }
+
 a {
 	color: var(--color-text);
 	text-decoration: none;
@@ -32,14 +33,10 @@ body {
 	position: relative;
 	overflow-x: hidden;
 	font-size: 16px;
+	padding-top: 100px;
 	@include media-breakpoint-up(xl) {
 		font-size: 18px;
 		line-height: 26px;
-	}
-}
-main {
-	padding-top: 100px;
-	@include media-breakpoint-up(xl) {
 		padding-top: 140px;
 	}
 }
@@ -168,4 +165,9 @@ main {
 .methodology-page__graph {
 	max-width: 100%;
 	width: 100%;
+}
+html {
+	box-sizing: border-box;
+	height: 100vh;
+	width: 100vw;
 }
