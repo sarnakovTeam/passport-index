@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	document
 		.querySelectorAll('.header__burger, .header .nav__close')
 		.forEach((el) => {
-			el.addEventListener('click', () => {
+			el.addEventListener('click', (e) => {
+				e.preventDefault();
 				const navElement = document.querySelector('#header-nav');
 				if (navElement) {
 					navElement.classList.toggle('--active');

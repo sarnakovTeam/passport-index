@@ -44,7 +44,7 @@
 			transition: all 0.25s ease;
 		}
 
-		a {
+		a:not(.nav__close) {
 			padding: 24px 20px;
 			font-size: 24px;
 			line-height: 28px;
