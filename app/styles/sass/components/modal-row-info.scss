@@ -1,0 +1,18 @@
+.modal-row-info {
+	display: grid;
+	grid-template-columns: 3fr 7fr;
+	gap: 8px;
+
+	&:not(:last-of-type) {
+		@extend .mb-4;
+	}
+	h3 {
+		@extend .text-mono;
+		margin-bottom: 0;
+	}
+	p {
+		font-size: 10px;
+		line-height: 12px;
+		color: var(--color-grey-text) !important;
+	}
+}
