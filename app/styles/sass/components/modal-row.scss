@@ -1,0 +1,20 @@
+.modal-row {
+	@extend .flex;
+	@extend .justify-between;
+	@extend .items-center;
+	@extend .gap-4;
+	@extend .py-1;
+
+	h2 {
+		@extend .text-mono;
+		@extend .text-mono--grey;
+		margin-bottom: 0;
+	}
+	div {
+		@extend .nowrap;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 26px;
+		text-align: right;
+	}
+}

@@ -112,7 +112,7 @@ body {
 	}
 }
 .text-mono {
-	font-family: Roboto Mono;
+	font-family: Roboto Mono, mono;
 	font-size: 11px;
 	line-height: 13px;
 	color: var(--color-text);
@@ -175,4 +175,33 @@ html {
 	box-sizing: border-box;
 	height: 100vh;
 	width: 100vw;
+}
+
+button {
+	border: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	overflow: visible;
+
+	background: transparent;
+
+	/* inherit font & color from ancestor */
+	color: inherit;
+	font: inherit;
+
+	/* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+	line-height: normal;
+
+	/* Corrects font smoothing for webkit */
+	-webkit-font-smoothing: inherit;
+	-moz-osx-font-smoothing: inherit;
+
+	/* Corrects inability to style clickable `input` types in iOS */
+	-webkit-appearance: none;
+
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
 }
