@@ -1,0 +1,56 @@
+<div class="modal micromodal-slide" id="search-country" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+		<div
+			class="modal__container flex flex-col"
+			role="dialog"
+			aria-modal="true"
+			aria-labelledby="search-country-title"
+		>
+			<button
+				class="modal__close"
+				aria-label="Close modal"
+				data-micromodal-close
+			></button>
+			<header class="modal__header">
+				<h2 class="modal__title" id="search-country-title">
+					Search country:
+				</h2>
+			</header>
+
+			<label for="inp" class="inp">
+				<div class="inp__prefix">
+					<svg width="16px" height="16px">
+						<use xlink:href="#search"></use>
+					</svg>
+				</div>
+				<input type="text" id="inp" placeholder="Search country" />
+			</label>
+
+			<main
+				class="
+					modal__content
+					--without-margins
+					--with-paddings
+					bg:light-grey
+					t-0
+					mt-0
+				"
+				id="search-country-content"
+			>
+				<!--#include virtual="/components/country-list.html" -->
+			</main>
+			<footer class="modal__footer flex justify-center">
+				<button
+					class="modal__btn btn btn__secondary"
+					data-micromodal-close
+					aria-label="Close this dialog window"
+				>
+					Select
+				</button>
+			</footer>
+		</div>
+	</div>
+</div>
+<div class="w-full flex justify-center" style="margin-bottom: 20px">
+	<button data-micromodal-trigger="search-country">Search country</button>
+</div>

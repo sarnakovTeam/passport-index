@@ -1,14 +1,22 @@
 .flex {
 	display: flex;
 }
+.flex-col {
+	flex-direction: column;
+}
+
 .justify-center {
 	justify-content: center;
 }
 .items-center {
 	align-items: center;
 }
+
 .w-full {
 	width: 100%;
+}
+.gap-4 {
+	gap: 1rem;
 }
 .mx-auto {
 	margin-left: auto;
