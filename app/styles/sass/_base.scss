@@ -28,6 +28,9 @@ ul {
 	margin-bottom: 0;
 }
 body {
+	-webkit-font-feature-settings: 'lnum';
+	-moz-font-feature-settings: 'lnum';
+	font-feature-settings: 'lnum';
 	font-family: $userfont;
 	line-height: 24px;
 	color: var(--color-text);
