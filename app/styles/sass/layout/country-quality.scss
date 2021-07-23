@@ -1,0 +1,124 @@
+.country-quality {
+  padding: 20px 0 70px;
+  @include media-breakpoint-up(xl) {
+    padding: 20px 0 125px;
+  }
+  &__wrapper {
+    @include media-breakpoint-up(xl) {
+      display: grid;
+      gap: 95px 105px;
+      grid-template-areas:
+        "b a"
+        "b c";
+    }
+  }
+  &__rates {
+    grid-area: a;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  &__rates-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--color-text);
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: right;
+      height: 45px;
+      padding-bottom: 10px;
+    }
+  }
+  &__rates-label {
+    color: var(--color-text2);
+    @include media-breakpoint-up(xl) {
+      color: var(--color-text);
+    }
+  }
+  &__value {
+    font-weight: bold;
+  }
+  &__graph {
+    grid-area: b;
+    max-width: 100%;
+
+    width: 100%;
+    margin-top: 36px;
+    @include media-breakpoint-up(xl) {
+      margin-top: 0;
+      max-width: 460px;
+    }
+  }
+  &__list {
+    grid-area: c;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 15px;
+    @include media-breakpoint-up(xl) {
+      margin-top: 0;
+      gap: 20px;
+    }
+  }
+  &__list-item {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    gap: 10px;
+    border-bottom: 1px solid var(--color-line);
+    @include media-breakpoint-up(xl) {
+      height: 40px;
+      padding: 0 0 8px 0;
+    }
+    &:nth-of-type(1) {
+      .circle {
+        background-color: var(--color-shadeof-blue-6);
+      }
+    }
+    &:nth-of-type(2) {
+      .circle {
+        background-color: var(--color-shadeof-blue-4);
+      }
+    }
+    &:nth-of-type(3) {
+      .circle {
+        background-color: var(--color-shadeof-blue-2);
+      }
+    }
+    &:nth-of-type(4) {
+      .circle {
+        background-color: var(--color-shadeof-blue-1);
+      }
+    }
+  }
+
+  &__list-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  &__label {
+    max-width: 115px;
+    text-align: left !important;
+    white-space: nowrap;
+    br {
+      @include media-breakpoint-up(xl) {
+        display: none;
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      white-space: normal;
+    }
+  }
+}

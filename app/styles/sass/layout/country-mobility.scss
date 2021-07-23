@@ -1,0 +1,59 @@
+.country-mobility {
+  padding: 20px 0;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__header-icon {
+    margin-bottom: 26px;
+  }
+  &__score {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    @include media-breakpoint-up(xl) {
+      flex-direction: column;
+      position: absolute;
+      bottom: 75px;
+      left: 0;
+      max-width: 130px;
+    }
+  }
+  &__list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 10px 40px;
+    @include media-breakpoint-up(xl) {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 17px 95px;
+    }
+  }
+  &__list-item {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    gap: 10px;
+    border-bottom: 1px solid var(--color-line);
+    @include media-breakpoint-up(xl) {
+      height: 60px;
+    }
+  }
+  &__list-value {
+    color: var(--color-line);
+    &--blue {
+      @include media-breakpoint-up(xl) {
+        color: var(--color-chart1);
+      }
+    }
+    &--lightblue {
+      @include media-breakpoint-up(xl) {
+        color: var(--color-shadeof-blue-6);
+      }
+    }
+  }
+ 
+}

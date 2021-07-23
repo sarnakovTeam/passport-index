@@ -1,0 +1,17 @@
+.share-mobile {
+  padding-top: 15px;
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 16px;
+  }
+  &__btn {
+    width: 43px;
+    height: 43px;
+    cursor: pointer;
+  }
+  &__btn-icon {
+    width: 100%;
+  }
+}
