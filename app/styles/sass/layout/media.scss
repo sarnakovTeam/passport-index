@@ -1,0 +1,31 @@
+.media {
+  &-title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+    margin: 20px 0 30px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    margin-bottom: 65px;
+    .btn {
+      margin-top: 40px;
+    }
+    @include media-breakpoint-up(xl) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 100px 20px;
+      .media__item-bottom {
+        margin-top: auto;
+      }
+    }
+  }
+}

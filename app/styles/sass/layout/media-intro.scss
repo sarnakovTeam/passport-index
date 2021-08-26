@@ -1,0 +1,21 @@
+.media-intro {
+  padding: 60px 0 20px;
+  @include media-breakpoint-up(xl) {
+    padding: 80px 0 20px;
+  }
+  &__tabs {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 35px;
+  }
+  &__tab {
+    flex: 1;
+    text-align: center;
+    padding-bottom: 17px;
+    border-bottom: 5px solid transparent;
+    &--active {
+      border-bottom: 5px solid var(--color-darkblue);
+    }
+  }
+}

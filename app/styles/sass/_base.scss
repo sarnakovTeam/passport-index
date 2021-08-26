@@ -54,6 +54,12 @@ body {
     max-width: 1440px;
     padding: 0 50px;
   }
+  &--small {
+    @include media-breakpoint-up(xl) {
+      max-width: 1070px;
+      padding: 0 50px;
+    }
+  }
 }
 .mobile-only {
   display: inherit;

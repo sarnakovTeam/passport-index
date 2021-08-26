@@ -1,0 +1,12 @@
+.media-articles {
+  &__img {
+    width: 100%;
+    height: 135px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    margin-bottom: 20px;
+  }
+  .text-mono {
+    text-align: right;
+  }
+}
